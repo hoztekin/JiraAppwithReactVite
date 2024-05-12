@@ -1,0 +1,126 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TaskCreate{
+  width:  450px;
+}
+
+.TaskUpdate{
+  width:  100%;
+}
+
+.TaskForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.TaskLabel{
+  margin: 10px 0px;
+}
+
+.TaskInput{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.TaskButton{
+  margin: 10px 0px;
+  padding: 10px;
+  border:1px solid green;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.TaskButton{
+  margin: 10px 0px;
+  padding: 10px;
+  border:1px solid green;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.TaskButtonUpdate{
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.taskList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.taskShow{
+  border:1px solid green;
+  border-radius: 30px;
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.taskTitle{
+  margin-bottom: 5px;
+}
+
+.ButtonDelete{
+  padding: 5px;
+  font-size: 15px;
+width: 60px;
+border: none;
+border-radius: 30px;
+background-color: red;
+color: white;
+margin-right: 10px;
+}
+
+.ButtonUpdate{
+  padding: 5px;
+  font-size: 15px;
+width: 100px;
+border: none;
+border-radius: 30px;
+background-color: blue;
+color: white;
+margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
