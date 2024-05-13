@@ -1,14 +1,12 @@
-/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useState } from "react";
+import { useContext } from "react";
+import TasksContext from "../context/task";
 
-export default function TaskCreate({
-  onCreate,
-  task,
-  taskFormUpdate,
-  onUpdate,
-}) {
+function TaskCreate({ task, taskFormUpdate, onUpdate }) {
+  // eslint-disable-next-line no-unused-vars
+  const { createTask, EditTaskById } = useContext(TasksContext);
   const [title, setTitle] = useState(task ? task.title : "");
   const [taskDesc, setTaskDesc] = useState(task ? task.taskDesc : "");
 
@@ -24,8 +22,10 @@ export default function TaskCreate({
     event.preventDefault();
     if (taskFormUpdate) {
       onUpdate(task.id, title, taskDesc);
+      //EditTaskById(task.id, title, taskDesc);
     } else {
-      onCreate(title, taskDesc);
+      createTask(title, taskDesc);
+      //onCreate(title, taskDesc);
     }
 
     setTitle("");
@@ -34,6 +34,7 @@ export default function TaskCreate({
 
   return (
     <div>
+      {" "}
       {taskFormUpdate ? (
         <div className="TaskUpdate">
           <h3>
@@ -86,3 +87,5 @@ export default function TaskCreate({
     </div>
   );
 }
+
+export default TaskCreate;
